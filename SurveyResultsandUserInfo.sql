@@ -1,4 +1,4 @@
-/*Key
+/*Survey Key
 1 - Poor
 2 - Below Average
 3 - Average
@@ -6,6 +6,7 @@
 5 - Excellent
 NULL - Haven't seen it or Missing Response
 */
+create database movierating;
 
 create table User_level_ratings (
 userid int AUTO_INCREMENT,
@@ -17,7 +18,7 @@ Joker tinyint,
 LittleWomen tinyint,
 PRIMARY KEY (userid)
 );
-#Manually inserted data from Survey
+/*Manually inserted data from Survey*/
 insert into user_level_ratings (UncutGems,GeminiMan,Cats,TheIrishman,Joker,LittleWomen) VALUES (1,NULL,NULL,4,4,NULL);
 insert into user_level_ratings (UncutGems,GeminiMan,Cats,TheIrishman,Joker,LittleWomen) VALUES (NULL,NULL,2,NULL,3,4);
 insert into user_level_ratings (UncutGems,GeminiMan,Cats,TheIrishman,Joker,LittleWomen) VALUES (NULL,NULL,NULL,3,NULL,NULL);
@@ -31,7 +32,7 @@ insert into user_level_ratings (UncutGems,GeminiMan,Cats,TheIrishman,Joker,Littl
 insert into user_level_ratings (UncutGems,GeminiMan,Cats,TheIrishman,Joker,LittleWomen) VALUES (NULL,NULL,NULL,NULL,NULL,NULL);
 insert into user_level_ratings (UncutGems,GeminiMan,Cats,TheIrishman,Joker,LittleWomen) VALUES (3,4,1,5,5,NULL);
 
-#Additional information on those who participated in the rating survey
+/*Additional information on those who participated in the rating survey*/
 create table userinfo (
 userid int,
 nameid varchar(100),
